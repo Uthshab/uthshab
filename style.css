@@ -263,3 +263,384 @@ body {
 
 
 /* hero section End */
+
+/* my story section start */
+/* About Section Base */
+.about-section {
+  width: 100%;
+  padding: 80px 5%;
+  background-color: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* Left Column Styling */
+.about-content {
+  flex: 1;
+  max-width: 560px;
+}
+
+.section-tag {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.tag-line {
+  width: 24px;
+  height: 2px;
+  background-color: #111827;
+}
+
+.tag-text {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #6b7280;
+}
+
+.about-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+  margin-bottom: 24px;
+}
+
+.about-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* Action Links */
+.about-actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 36px;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.action-btn:hover {
+  opacity: 0.7;
+}
+
+.download-link {
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 2px;
+}
+
+/* Right Card Styling */
+.experience-card {
+  flex: 1;
+  max-width: 500px;
+  height: 420px;
+  background-color: #e2e7f3; /* Soft bluish pastel */
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  
+}
+
+.stat-number {
+  font-size: 110px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.card-dots {
+  display: flex;
+  gap: 16px;
+}
+
+
+
+.dot {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #b0b9cf;
+  border-radius: 50%;
+}
+
+/* Responsive Layout */
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+  }
+  
+  .about-content,
+  .experience-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* my story section End */
+
+/* Experise section start  */
+/* Section Container */
+.services-section {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Header & Badge */
+.services-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e8edff;
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.services-header h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+/* Services Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Base Card Styling */
+.service-card {
+  padding: 32px 24px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  cursor: pointer;
+  /* Smooth transitions for lift & shadow */
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.35s ease, 
+              background-color 0.3s ease;
+}
+
+/* Base Card Background Themes */
+.card-blue { background-color: #e8f4fe; }
+.card-green { background-color: #f0f8ec; }
+.card-yellow { background-color: #fffde7; }
+.card-pink { background-color: #fdecf2; }
+
+/* Icon Box Styling */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  /* Smooth scale transition for icon */
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.35s ease;
+}
+
+/* Typography inside Cards */
+.service-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.service-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ======================================================
+   HOVER EFFECTS & MICRO-INTERACTIONS
+   ====================================================== */
+
+/* 1. Card Lift & Floating Shadow */
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+/* 2. Icon Pop & Tilt on Card Hover */
+.service-card:hover .icon-box {
+  transform: scale(1.15) rotate(-4deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* 3. Theme Color Shifts on Hover */
+.card-blue:hover { background-color: #dbeafe; }
+.card-green:hover { background-color: #dcfce7; }
+.card-yellow:hover { background-color: #fef9c3; }
+.card-pink:hover { background-color: #fce7f3; }
+
+/* Responsive Grid Layout */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Experise section End  */
+
+/* CTA Banner start */
+
+/* Container Banner Card */
+.cta_banner {
+  background-color: #dbeafe;
+  padding: 40px 20px;
+  width: 100%;
+}
+.cta-banner {
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 24px 36px;
+  max-width: 900px;
+  width: 100%;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 20px 40px rgba(253, 249, 249, 0.06);    
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Left Content Wrapper */
+.cta-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Icon Box */
+.cta-icon-box {
+  width: 56px;
+  height: 56px;
+  background-color: #e0e7ff; /* Subtle blue/purple tint */
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Text Content */
+.cta-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.cta-text p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Action Button */
+.cta-btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+/* Button Micro-interaction */
+.cta-btn:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .cta-banner {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    padding: 28px 20px;
+  }
+  
+  .cta-left {
+    flex-direction: column;
+  }
+  
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* CTA Banner End */
