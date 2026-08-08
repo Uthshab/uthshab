@@ -676,14 +676,14 @@ body {
   margin-bottom: 8px;
 }
 
-/* Adds the small horizontal line next to MY RECENT WORKS */
+/* Adds the small horizontal line next to MY RECENT WORKS
 .sub-heading::before {
   content: '';
   display: inline-block;
-  width: 20px;
+  width: 200px;
   height: 2px;
   background-color: #71717a;
-}
+} */
 
 .section-title {
   font-size: 36px;
